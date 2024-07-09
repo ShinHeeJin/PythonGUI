@@ -13,9 +13,9 @@ from PySide6.QtWidgets import (
 )
 
 
-class Widget(QWidget):
+class MyWidget(QWidget):
     def __init__(self, parent=None):
-        super(Widget, self).__init__(parent)
+        super().__init__(parent)
 
         menu_widget = QListWidget()
         for i in range(10):
@@ -33,14 +33,14 @@ class Widget(QWidget):
         main_widget.setLayout(content_layout)
 
         layout = QHBoxLayout()
-        layout.addWidget(menu_widget, 1)
-        layout.addWidget(main_widget, 4)
+        layout.addWidget(menu_widget, stretch=1)
+        layout.addWidget(main_widget, stretch=5)
         self.setLayout(layout)
 
 
 if __name__ == "__main__":
-    app = QApplication([])
-    widget = Widget()
+    app = QApplication()
+    widget = MyWidget()
     widget.resize(800, 600)
     widget.show()
 

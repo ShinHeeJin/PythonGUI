@@ -3,5 +3,5 @@ QLabel {
 }
 
 QLabel#title {
-    font-size: 20px;
+    font-size: 50px;
 }

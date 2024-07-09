@@ -10,8 +10,6 @@ class MyWidget(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.hello = ["Hallo Welt", "Hei maailma", "Hola Mundo"]
-
         self.button = QPushButton("Click!")
         self.text = QLabel("Hello World", alignment=Qt.AlignmentFlag.AlignCenter)
 
@@ -22,11 +20,11 @@ class MyWidget(QWidget):
 
     @Slot()
     def magic(self):
-        self.text.setText(random.choice(self.hello))
+        self.text.setText(random.choice(["Apple", "Banna", "Orange"]))
 
 
 if __name__ == "__main__":
-    app = QApplication([])
+    app = QApplication()
     widget = MyWidget()
     widget.resize(800, 600)
     widget.show()

@@ -1,5 +1,3 @@
-import sys
-
 from PySide6.QtWidgets import QApplication, QMainWindow
 from test_ui import Ui_MainWindow
 
@@ -15,5 +13,4 @@ app = QApplication([])
 window = MainWindow()
 window.show()
 
-sys.exit(app.exec())
-sys.exit(app.exec())
+app.exec_()
