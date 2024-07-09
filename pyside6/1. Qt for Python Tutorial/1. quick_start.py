@@ -6,6 +6,9 @@ from PySide6.QtWidgets import QApplication, QLabel, QPushButton, QVBoxLayout, QW
 
 
 class MyWidget(QWidget):
+    """
+    https://doc.qt.io/qtforpython-6/tutorials/index.html
+    """
 
     def __init__(self):
         super().__init__()
