@@ -44,7 +44,7 @@ if __name__ == "__main__":
     widget.resize(800, 600)
     widget.show()
 
-    with open("../ui/style2.qss", "r") as f:
+    with open("./ui/style2.qss", "r") as f:
         _style = f.read()
         app.setStyleSheet(_style)
 

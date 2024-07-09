@@ -16,7 +16,7 @@ w = QLabel("This is a placeholder text")
 # )
 w.show()
 
-with open("../ui/style.qss", "r") as f:
+with open("./ui/style.qss", "r") as f:
     _style = f.read()
     app.setStyleSheet(_style)
 
